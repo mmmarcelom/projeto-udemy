@@ -1,18 +1,15 @@
 const express = require('express')
 const app = express()
+const routes = require('./routes')
+const path = require('path')
 
-app.get('/', (req, res) => {
-    res.send('<h1>Hello world</h1>')
-})
+app.use(express.urlencoded({extended: true}))
+app.use(routes)
 
-app.get('/tests', (req, res) => {
-    console.log(req.params)
-    res.send(Testes)
-})
+app.set('views', path.resolve(__dirname, 'src', 'views'))
+app.set('view engine', 'ejs')
 
-app.get('/contato', (req, res) => {
-    res.send()
-})
+
 
 const porta = 3000
 
