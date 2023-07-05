@@ -5,8 +5,9 @@ app.get('/', (req, res) => {
     res.send('<h1>Hello world</h1>')
 })
 
-app.post('/', (req, res) => {
-    res.send('Hello world')
+app.get('/tests', (req, res) => {
+    console.log(req.params)
+    res.send(Testes)
 })
 
 app.get('/contato', (req, res) => {

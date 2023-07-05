@@ -1,14 +1,14 @@
 # projeto-udemy
 
 ## No github:
-Criar um repositório (c/ gitiginore para node)
+Criar um repositório (c/ gitiginore para node)  
 Copiar url do repositório
 
 ## No terminal:
-git clone <url do repositório>
-npm init -y
-npm install express
-npm install nodemon --save-dev
+git clone <url do repositório>  
+npm init -y  
+npm install express  
+npm install nodemon --save-dev  
 
 ## Criar um arquivo "server.js": 
 ````
@@ -33,4 +33,7 @@ app.listen(porta, () => {
   },
 ````
 
-## 
+## Para iniciar, digite no terminal:
+````
+npm start
+````
